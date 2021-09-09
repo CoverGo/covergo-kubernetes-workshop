@@ -10,4 +10,6 @@ Below you can find the different parts discussed during this workshop
 
 1. [Setup](001-setup): Prepare you environment
 2. [Pod](002-pod): Understand the pod primitive
-2. [Deployment](003-deployment): Understand the deployment primitive
+3. [Deployment](003-deployment): Understand the deployment primitive
+4. [Service](004-service): Learn how to serve traffic
+5. [Freestyle](005-freestyle): Get your hands dirty
