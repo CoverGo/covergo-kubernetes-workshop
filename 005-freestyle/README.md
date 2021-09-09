@@ -33,3 +33,5 @@ And the one for backend:
 
 Look at the diffents informations provided in those different flags and try to figure out
 which environment varibles you should provide to each of the container.
+
+The documentation provided on the PodInfo page should contain all informations you need.
