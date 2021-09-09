@@ -1,0 +1,10 @@
+{
+    "conventionalCommits.scopes": [
+        "root",
+        "001-setup",
+        "002-pod",
+        "toc",
+        "exercise",
+        "explain"
+    ]
+}
