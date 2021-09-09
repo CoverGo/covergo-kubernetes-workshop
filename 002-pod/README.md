@@ -32,6 +32,7 @@ Try to achieve the following tasks:
 
 - find the command to **show logs** of the pod you just created
 - find the command to **describe** the pod you just created
+- find the command to **port forward** trafic from your local machine directly to the pod. You can now visit the content delivered by the container.
 - find the command to **delete** the pod you just created
 
 
