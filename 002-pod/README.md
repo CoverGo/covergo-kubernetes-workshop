@@ -37,3 +37,31 @@ Try to achieve the following tasks:
 
 
 What happened after the last command? Yes the pod disapeared and nothing else happened, this pod is lost forever.
+
+## A lot of parameters
+
+As you can see in the [provided example](simple/pod.yaml) there is a lot of possible options, let's try to understand.
+
+    apiVersion: v1                          # The version we are using for that specific resource
+    kind: Pod                               # The type of resources we are deploying
+    metadata:
+    name: simple-pod                        # The name given to the pod
+    labels:
+        name: simple-pod                    # Some labels that can be used to search this pod.
+    spec:
+    containers:                             # List of containers deployed
+    - name: simple-pod
+        image: jmalloc/echo-server          # Docker image we want to deploy in the first container
+        env:                                # The environment passed to the container.
+        - name: PORT
+          value: "8080"
+        resources:                          # Resources allocated to the pod
+            limits:
+                memory: "128Mi"
+                cpu: "500m"
+        ports:                              # Ports exposed by the pod. You can optionally give a name to the pod, here 'http'
+        - containerPort: 8080
+            name: http
+
+You should be up to speed with pods for now, try to remember all the commands you learnt in that part because we will use very similar one 
+in the next part when we talk about deployments.
