@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-pod
+  labels:
+    name: simple-pod
+spec:
+  containers:
+  - name: simple-pod
+    image:  yeasy/simple-web:latest
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80 
+        name: http
